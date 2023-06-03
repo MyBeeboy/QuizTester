@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.0.2 (Python 3.11.3 on win32)" generated="20230602 21:23:52.059" rpa="false" schemaversion="3">
+<suite id="s1" name="Test" source="C:\Users\Dekdi\Desktop\test robot\test.robot">
+<test id="s1-t1" name="Test_WadCases1" line="17">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230602 21:23:52.271" level="INFO">Opening browser 'Chrome' to base url 'https://codenboxautomationlab.com/practice/'.</msg>
+<status status="PASS" starttime="20230602 21:23:52.270" endtime="20230602 21:23:59.432"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230602 21:24:02.433" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20230602 21:23:59.433" endtime="20230602 21:24:02.433"/>
+</kw>
+<status status="PASS" starttime="20230602 21:23:52.270" endtime="20230602 21:24:02.434"/>
+</test>
+<test id="s1-t2" name="Test_WadCases2" line="20">
+<kw name="Select Radio Button" library="SeleniumLibrary">
+<arg>radioButton</arg>
+<arg>radio2</arg>
+<doc>Sets the radio button group ``group_name`` to ``value``.</doc>
+<msg timestamp="20230602 21:24:02.436" level="INFO">Selecting 'radio2' from radio button 'radioButton'.</msg>
+<status status="PASS" starttime="20230602 21:24:02.436" endtime="20230602 21:24:02.542"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230602 21:24:05.544" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20230602 21:24:02.543" endtime="20230602 21:24:05.544"/>
+</kw>
+<status status="PASS" starttime="20230602 21:24:02.435" endtime="20230602 21:24:05.544"/>
+</test>
+<test id="s1-t3" name="Test_WadCases3" line="23">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>//*[@id="autocomplete"]</arg>
+<arg>${search}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230602 21:24:05.546" level="INFO">Typing text 'Thai' into text field '//*[@id="autocomplete"]'.</msg>
+<status status="PASS" starttime="20230602 21:24:05.545" endtime="20230602 21:24:05.681"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230602 21:24:08.681" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20230602 21:24:05.681" endtime="20230602 21:24:08.681"/>
+</kw>
+<status status="PASS" starttime="20230602 21:24:05.545" endtime="20230602 21:24:08.683"/>
+</test>
+<test id="s1-t4" name="Test_WadCases4" line="26">
+<kw name="Select From List By Label" library="SeleniumLibrary">
+<arg>//*[@id="dropdown-class-example"]</arg>
+<arg>API</arg>
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<msg timestamp="20230602 21:24:08.691" level="INFO">Selecting options from selection list '//*[@id="dropdown-class-example"]' by label API.</msg>
+<status status="PASS" starttime="20230602 21:24:08.689" endtime="20230602 21:24:08.786"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230602 21:24:11.788" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20230602 21:24:08.786" endtime="20230602 21:24:11.788"/>
+</kw>
+<status status="PASS" starttime="20230602 21:24:08.687" endtime="20230602 21:24:11.788"/>
+</test>
+<test id="s1-t5" name="Test_WadCases5" line="29">
+<kw name="Select Checkbox" library="SeleniumLibrary">
+<arg>//*[@id="checkBoxOption1"]</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<msg timestamp="20230602 21:24:11.794" level="INFO">Selecting checkbox '//*[@id="checkBoxOption1"]'.</msg>
+<status status="PASS" starttime="20230602 21:24:11.793" endtime="20230602 21:24:11.888"/>
+</kw>
+<kw name="Select Checkbox" library="SeleniumLibrary">
+<arg>//*[@id="checkBoxOption3"]</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<msg timestamp="20230602 21:24:11.889" level="INFO">Selecting checkbox '//*[@id="checkBoxOption3"]'.</msg>
+<status status="PASS" starttime="20230602 21:24:11.889" endtime="20230602 21:24:11.959"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230602 21:24:14.959" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20230602 21:24:11.959" endtime="20230602 21:24:14.959"/>
+</kw>
+<status status="PASS" starttime="20230602 21:24:11.791" endtime="20230602 21:24:14.959"/>
+</test>
+<test id="s1-t6" name="Test_WadCases6" line="33">
+<kw name="Mouse Over" library="SeleniumLibrary">
+<arg>//*[@id="mousehover"]</arg>
+<doc>Simulates hovering the mouse over the element ``locator``.</doc>
+<msg timestamp="20230602 21:24:14.961" level="INFO">Simulating Mouse Over on element '//*[@id="mousehover"]'.</msg>
+<status status="PASS" starttime="20230602 21:24:14.961" endtime="20230602 21:24:15.294"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230602 21:24:18.296" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20230602 21:24:15.295" endtime="20230602 21:24:18.296"/>
+</kw>
+<status status="PASS" starttime="20230602 21:24:14.960" endtime="20230602 21:24:18.297"/>
+</test>
+<status status="PASS" starttime="20230602 21:23:52.061" endtime="20230602 21:24:18.301"/>
+</suite>
+<statistics>
+<total>
+<stat pass="6" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="6" fail="0" skip="0" id="s1" name="Test">Test</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
